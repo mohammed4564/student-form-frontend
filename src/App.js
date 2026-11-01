@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import StudentForm from './components/StudentForm';
+import React from "react";
 
 function App() {
   return (
-  <div>
+  <div className="App">
     <StudentForm />
 
   </div>
