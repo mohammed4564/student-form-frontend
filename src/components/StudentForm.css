@@ -1,0 +1,223 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.student-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #263247;
+}
+
+.student-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.student-header h1 {
+    color: #243b67;
+    margin-bottom: 8px;
+}
+
+.student-header p {
+    color: #777;
+}
+
+.form-card,
+.table-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+.form-card h2,
+.table-card h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    color: #243b67;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #d5dce5;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.search-box input:focus {
+    border-color: #356ae6;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.btn-primary {
+    background: #315fce;
+    color: white;
+}
+
+.btn-secondary {
+    background: #e5e9f0;
+    color: #333;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    display: flex;
+    gap: 8px;
+}
+
+.search-box input {
+    width: 160px;
+    padding: 10px;
+    border: 1px solid #d5dce5;
+    border-radius: 6px;
+    outline: none;
+}
+
+.search-box button {
+    background: #315fce;
+    color: white;
+}
+
+.search-box .btn-secondary {
+    background: #e5e9f0;
+    color: #333;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    min-width: 650px;
+}
+
+thead {
+    background: #243b67;
+    color: white;
+}
+
+th,
+td {
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e9f0;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background: #f5f7fb;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-edit {
+    background: #e5a52c;
+    color: white;
+}
+
+.btn-delete {
+    background: #dc4545;
+    color: white;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 25px;
+    color: #888;
+}
+
+.record-count {
+    margin-top: 18px;
+    font-weight: 600;
+    color: #243b67;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+
+    .student-container {
+        padding: 12px;
+        margin: 10px auto;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .table-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .search-box {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .search-box input {
+        flex: 1;
+        min-width: 100px;
+    }
+
+    .form-card,
+    .table-card {
+        padding: 16px;
+    }
+}
